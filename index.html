@@ -4,14 +4,16 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="google-signin-client_id" content="311407807478-31hrvffpcohep7go70rj7n8uafo4ph7q.apps.googleusercontent.com">
+    <meta Author="Pratibha Jha">
     <title>IoT Control Panel</title>
-  <link rel="stylesheet" type="text/css" href="style.css">
-  <script src="https://apis.google.com/js/platform.js" async defer></script>
-  <script src="/data.js"></script>
-   <link rel="icon" type="image/x-icon" href="Donately.jpg">
-  <meta name="google-signin-client_id" content="311407807478-31hrvffpcohep7go70rj7n8uafo4ph7q.apps.googleusercontent.com">
-  <meta Author="Pratibha Jha">
+ 
+    <link rel="stylesheet" type="text/css" href="style.css">
+ 
+    <script src="https://apis.google.com/js/platform.js" async defer></script>
+    <script src="/data.js"></script>
 
+    <link rel="icon" type="image/x-icon" href="Donately.jpg">
 </head>
 <body>
     <header>
@@ -19,7 +21,11 @@
       </header>
       <hr>
       <h5>Login Via Google:</h5>
-      <div class="g-signin2" data-onsuccess="onSignIn"></div>
+      <div class="g-signin2" 
+      data-onsuccess="onSignIn"
+      data-scope="https://www.googleapis.com/auth/plus.login"
+      data-accesstype="offline"
+      data-redirecturi="www.youtube.com"></div>
       <main>
         <!-- Your IoT device control interface goes here -->
       </main>
@@ -51,6 +57,6 @@
         </p>
       </footer>
     
-      <script src="script.js"></script>
+
 </body>
 </html>
