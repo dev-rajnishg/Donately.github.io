@@ -7,29 +7,47 @@
     <title>IoT Control Panel</title>
   <link rel="stylesheet" type="text/css" href="style.css">
   <script src="https://apis.google.com/js/platform.js" async defer></script>
+  <script src="/data.js"></script>
   <meta name="google-signin-client_id" content="311407807478-31hrvffpcohep7go70rj7n8uafo4ph7q.apps.googleusercontent.com">
+  <meta Author="Pratibha Jha">
 
 </head>
 <body>
     <header>
-        <h1>Welcome to the IoT Control Panel of IDonately</h1>
+        <h1>Welcome to the IoT Control Panel of Donately</h1>
       </header>
       <hr>
+      <h5>Login Via Google:</h5>
       <div class="g-signin2" data-onsuccess="onSignIn"></div>
       <main>
         <!-- Your IoT device control interface goes here -->
       </main>
+      <button onclick="signOut();"> signOut</button>
+      
     <div>
       <h1 id='intro-name'>
         Donately
       </h1>
       <p id="intro-des">
-        Experience the Future: Embrace our Cutting-Edge Cloud-Powered IoT Solution for Conveniently Operating the Donately Box, Ensuring Effortless Delivery of Medicines and Vital Medical Supplies.
+        Experience the Future: Embrace our Cutting-Edge Cloud-Powered IoT Solution <br> for Conveniently Operating the Donately Box, Ensuring Effortless Delivery of Medicines and Vital Medical Supplies.
       </p>
+    </div>
+
+    <h2 id="gallery-t">
+      Gallery
+    </h2>
+      <div id="gallery-box">
+      <img src="/1.jpg" id="gallery-pics1">
+      <img src="/2.jpg" id="gallery-pics1">
+      <br>
+      <img src="/3.jpg" id="gallery-pics">
+      <img src="/4.jpg" id="gallery-pics">
     </div>
     <hr>
       <footer>
-        <p>&copy; 2023 Donately</p>
+        <p>&copy; 2023 Donately 
+          <h3>Submitted by: Pratibha Jha (2210996524); Vaani Sethi (2210996518)</h3>
+        </p>
       </footer>
     
       <script src="script.js"></script>
