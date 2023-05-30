@@ -23,7 +23,10 @@ body {
     cursor: pointer;
     text-align: center;
   }
-  
+  #g-signin2{
+    background-color: #333;
+  }
+
   main {
     padding: 20px;
   }
@@ -40,8 +43,29 @@ body {
     block-size: 50px;
     text-align: center;
     display: block;
-    background-color: whitesmoke;
   }
+  #gallery-t{
+    color: #333;
+    block-size: 30px;
+    background-color: #fff7f7;
+    text-align: left;
+    margin-left: 10%;
+    display: inline;
+  }  
+  #gallery-pics{
+    height: 400px;
+    width: 400px;
+    margin-left: 10%;
+    display: inline-block;
+  }
+  #gallery-pics1{
+    height: 400px;
+    width: 400px;
+    margin-left: 10%;
+   }
+   #gallery-box{
+    background-color: #e4e3e3;
+   }
   footer {
     background-color: #f1f1f1;
     padding: 10px;
