@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="google-signin-client_id" content="311407807478-31hrvffpcohep7go70rj7n8uafo4ph7q.apps.googleusercontent.com">
+    <!-- <meta name="google-signin-client_id" content="311407807478-31hrvffpcohep7go70rj7n8uafo4ph7q.apps.googleusercontent.com"> -->
     <meta Author="Pratibha Jha">
     <title>IoT Control Panel</title>
  
@@ -21,11 +21,31 @@
       </header>
       <hr>
       <h5>Login Via Google:</h5>
-      <div class="g-signin2" data-onsuccess="onSignIn"></div>
+
+
+<div id="g_id_onload"
+     data-client_id="311407807478-31hrvffpcohep7go70rj7n8uafo4ph7q.apps.googleusercontent.com"
+     data-context="signin"
+     data-ux_mode="redirect"
+     data-login_uri="https://idonately.netlify.app/"
+     data-nonce=""
+     data-auto_prompt="false">
+</div>
+
+<div class="g_id_signin"
+     data-type="standard"
+     data-shape="pill"
+     data-theme="outline"
+     data-text="continue_with"
+     data-size="large"
+     data-logo_alignment="left">
+</div>
+
+
       <main>
         <!-- Your IoT device control interface goes here -->
       </main>
-      <button onclick="signOut();"> signOut</button>
+      <!-- <button onclick="signOut();"> signOut</button> -->
       
     <div>
       <h1 id='intro-name'>
